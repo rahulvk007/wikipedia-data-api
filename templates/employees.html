@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Elements</title>
+</head>
+<body>
+<table id="employees" style="width:100%">
+    {% if result %}
+    <tr>
+        <th>Name</th>
+	<th>Atomic Number</th>
+        <th>Atomic Weight</th>
+	<th>Symbol</th>
+        <th>Electronic Configuration</th>
+
+    </tr>
+    {% for row in result %}
+    <tr>
+        <td> {{ row.name }}</td>
+	<td> {{ row.atomic_number }}</td>
+        <td> {{ row.atomic_weight }}</td>
+	<td> {{ row.symbol }}</td>
+        <td> {{ row.electron_configuration }}</td>
+    </tr>
+    {% endfor %}
+    {% endif %}
+</table>
+</body>
+</html>

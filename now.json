@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+   { "src": "!*.py", "use": "@now/static" } ,
+   { "src": "*.py", "use": "@now/python" },
+   { "src": "*.jpg", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/!*.jpg", "dest": "/index.py"},
+    { "src": "/.*", "dest": "/index.py"},
+    { "src": "/blogging/netlify-vs-github-pages-speedtest", "dest": "/index.py"}
+    
+  ]
+}
