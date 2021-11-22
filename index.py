@@ -4,10 +4,10 @@ import pymysql
 app = Flask(__name__)
 
 
-host = "localhost"
-user = "root"
-password = "rahul3791"
-db = "elements"
+host = "sql6.freemysqlhosting.net"
+user = "sql6453018"
+password = "qn3tbANMvd"
+db = "sql6453018"
 
 
 @app.route('/', methods=['GET', 'POST'])
