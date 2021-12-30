@@ -34,11 +34,11 @@ tr:nth-child(even) {
     </tr>
     {% for row in result %}
     <tr>
-        <td> {{ row.name }}</td>
-	<td> {{ row.atomic_number }}</td>
-        <td> {{ row.atomic_weight }}</td>
-	<td> {{ row.symbol }}</td>
-        <td> {{ row.electron_configuration }}</td>
+        <td> {{ row[0] }}</td>
+	<td> {{ row[1] }}</td>
+        <td> {{ row[2] }}</td>
+	<td> {{ row[3] }}</td>
+        <td> {{ row[4] }}</td>
     </tr>
     {% endfor %}
     {% endif %}
