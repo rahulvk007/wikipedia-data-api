@@ -1,4 +1,4 @@
-Flask==1.0.2
+Flask==2.0.3
 pymysql==0.9.3
 beautifulsoup4==4.10.0
 requests==2.26.0
